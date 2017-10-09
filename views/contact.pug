@@ -1,0 +1,15 @@
+extends layout
+block content
+    form(method='POST' action='' class = 'container login-form' style = 'margin-top:150px')
+      h1 Please ask me anything!
+      div(class = 'form-group' )
+        label(for="Name") Name
+        input(type="text" class="form-control" name="name" placeholder="John Smith")
+      div(class = 'form-group' )
+        label(for="email") Email
+        input(type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="john@gmail.com")
+      div(class ='form-group')
+        label(for="password") Details
+        textarea(cols = '4' type="text" class="form-control" name="details" placeholder="How much for...")
+      
+      button(type = 'submit' class = 'btn btn-primary bg-dark') Send!
